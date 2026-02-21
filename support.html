@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - EduDrawKids</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@400;700&display=swap');
+
+        :root {
+            --paper-color: #fff;
+            --primary-blue: #4facfe;
+            --primary-red: #ff5e62;
+            --primary-yellow: #fcdb00;
+            --primary-green: #00f260;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f0f8ff;
+            background-image: radial-gradient(#8EC5FC 20%, transparent 20%),
+                radial-gradient(#ff9a9e 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 100px 100px;
+            margin: 0; padding: 20px; color: var(--text-color);
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: var(--paper-color);
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: center;
+            border: 8px solid white;
+            outline: 8px dashed var(--primary-yellow);
+        }
+
+        h1 { font-family: 'Chewy', cursive; color: var(--primary-blue); font-size: 3em; margin-bottom: 0.2em; }
+        p { font-size: 1.2em; font-weight: 600; margin-bottom: 25px; }
+
+        form { text-align: left; display: flex; flex-direction: column; gap: 15px; }
+        label { font-weight: bold; color: var(--primary-blue); margin-left: 10px; }
+        
+        input, textarea {
+            font-family: 'Comic Neue', sans-serif;
+            padding: 15px;
+            border: 3px solid #eee;
+            border-radius: 15px;
+            font-size: 1.1em;
+            outline: none;
+        }
+
+        input:focus, textarea:focus { border-color: var(--primary-blue); }
+
+        .btn-submit {
+            font-family: 'Chewy', cursive;
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.8em;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 0px #00c34d;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover { transform: translateY(-3px); box-shadow: 0 8px 0px #00c34d; }
+        .back-link { display: inline-block; margin-top: 20px; color: var(--primary-red); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Need Help? 🎨</h1>
+        <p>Have a question or a cool idea for a new drawing? Send us a message!</p>
+
+        <form action="https://formspree.io/f/tejasgami61@gmail.com" method="POST">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="What's your name?" required>
+
+            <label>Your Email (Parent's Email)</label>
+            <input type="email" name="_replyto" placeholder="email@example.com" required>
+
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+            <button type="submit" class="btn-submit">Send Message! 🚀</button>
+        </form>
+
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>
