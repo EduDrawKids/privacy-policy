@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduDrawKids - Information Center</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@400;700&display=swap');
+
+        :root {
+            --paper-color: #fff;
+            --primary-blue: #4facfe;
+            --primary-red: #ff5e62;
+            --primary-yellow: #fcdb00;
+            --primary-green: #00f260;
+            --primary-purple: #a18cd1;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f0f8ff;
+            background-image: radial-gradient(#8EC5FC 20%, transparent 20%),
+                radial-gradient(#ff9a9e 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 100px 100px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: var(--paper-color);
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: center;
+            border: 8px solid white;
+            outline: 8px dashed var(--primary-green);
+        }
+
+        h1 {
+            font-family: 'Chewy', cursive;
+            color: var(--primary-blue);
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 0px #eee;
+        }
+
+        p {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .button-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            font-family: 'Chewy', cursive;
+            font-size: 1.8em;
+            padding: 15px 30px;
+            text-decoration: none;
+            color: white;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 11px 0px rgba(0,0,0,0.1);
+        }
+
+        .btn-privacy { background-color: var(--primary-red); }
+        .btn-terms { background-color: var(--primary-blue); }
+
+        .emoji-float { font-size: 3em; margin-bottom: 10px; }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="emoji-float">🎨🖌️✨</div>
+        <h1>EduDrawKids</h1>
+        <p>Welcome to our creative corner! Please select a document below:</p>
+
+        <div class="button-stack">
+            <a href="privacy.html" class="btn btn-privacy">Privacy Policy</a>
+            <a href="terms.html" class="btn btn-terms">Terms & Conditions</a>
+        </div>
+
+        <p style="margin-top: 40px; font-size: 1em; color: #aaa;">© 2026 EduDrawKids Team</p>
+    </div>
+
+</body>
+</html>
